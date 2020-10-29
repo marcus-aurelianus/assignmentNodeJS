@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "a0e975cb-7565-47ce-8989-a072db581516",
+		"name": "school-administration-system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Workload",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/reports/workload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"reports",
+						"workload"
+					]
+				},
+				"description": "get work load from teachers"
+			},
+			"response": []
+		},
+		{
+			"name": "Register new record",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"teacher\":{\r\n      \"name\":\"Teacher 1\",\r\n      \"email\":\"teacher1@gmail.com\"\r\n   },\r\n   \"students\":[\r\n      {\r\n         \"name\":\"Student 1\",\r\n         \"email\":\"student1@gmail.com\"\r\n      },\r\n      {\r\n         \"name\":\"Student 2\",\r\n         \"email\":\"student2@gmail.com\"\r\n      }\r\n   ],\r\n   \"subject\":{\r\n      \"subjectCode\":\"ENG\",\r\n      \"name\":\"English\"\r\n   },\r\n   \"class\":{\r\n      \"classCode\":\"P1-1\",\r\n      \"name\":\"P1 Integrity\"\r\n   }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/healthcheck",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"healthcheck"
+					]
+				},
+				"description": "register new record for teachers"
+			},
+			"response": []
+		},
+		{
+			"name": "Healtcheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
