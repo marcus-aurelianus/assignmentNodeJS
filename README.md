@@ -8,15 +8,15 @@ Please read through NodeJS_Assessment.pdf carefully before you attempt.
 
 ## available API
 
-/api/healthcheck
-/api/register
-/api/reports/workload
+- /api/healthcheck
+- /api/register
+- /api/reports/workload
 
 ## Illustration of register user record approach
 
-In reality, a same class under same subject should have same amount of students regardless of teachers.
-So whenever we are registering user record with the register API,
-The register service will query from the database and update the students of other teachers.
+In reality, a same class under same subject should have same amount of students regardless of teachers. <br>
+So whenever we are registering user record with the register API, <br>
+The register service will query from the database and update the students of other teachers. <br>
 
 ## Prerequisites
 - NodeJS v12.18.3
