@@ -33,7 +33,7 @@ export default async function RegisterUserService(requestBody){
       teacher.students = students;
       await teacher.save();
       LOG.info(`Updating students for ${teacher.name} for subject ${subjectName} and class ${className} in the database`);
-      if (teacher.email == email){
+      if (teacher.email === email){
         teacherCreatedForThisClassAndSubject = true;
       }
     }
