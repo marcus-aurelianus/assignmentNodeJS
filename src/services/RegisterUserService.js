@@ -52,3 +52,35 @@ export default async function RegisterUserService(requestBody){
 
   }
 }
+
+
+// A:Local  B: Outside
+// 1A:10
+// 2A:20
+
+// 1B:10
+// 1A:10
+
+
+// offset    20 -----20000
+// limit     10
+// classCode
+
+
+//
+
+// 0 30
+
+
+// 0-60
+// 20-30
+
+// 10 10
+// 15 5
+// 17 3
+
+
+// 'A'-'Z'
+// {'A':1,'B':'500'=...}
+// {'AA':1,'AD':300,..,'NN':19000,'NM':'21000',"ZZ":10000000} 26*26 k
+// A B

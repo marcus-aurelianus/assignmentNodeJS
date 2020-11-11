@@ -8,3 +8,6 @@ const router = Express.Router();
 router.use('/', [HealthcheckController,RegisterController,WorkloadController]);
 
 export default router;
+
+
+// CRUD

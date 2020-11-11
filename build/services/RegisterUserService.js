@@ -104,7 +104,7 @@ function _RegisterUserService() {
           case 19:
             LOG.info("Updating students for ".concat(_teacher.name, " for subject ").concat(subjectName, " and class ").concat(className, " in the database"));
 
-            if (_teacher.email == email) {
+            if (_teacher.email === email) {
               teacherCreatedForThisClassAndSubject = true;
             }
 
